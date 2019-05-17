@@ -5,6 +5,7 @@ import './App.css';
 
 const App = () => {
 
+  //api site https://developer.edamam.com/edamam-docs-recipe-api
     const APP_ID = "793dd002";
     const APP_KEY = "0eafd3e52ac97ce01d43cab4e8d04a74";
 
@@ -36,7 +37,7 @@ const App = () => {
     }
   return (
     <div className="App">
-    <h1>Recipe Finder</h1>
+    <h1>Recipe Search</h1>
       <form onSubmit={getSearch} className="search-form">
         <input 
         className="search-bar" 
@@ -48,6 +49,7 @@ const App = () => {
         Search
         </button>
       </form>
+      <container className="recipe">
       {recipes.map(recipe => (
         <Recipe 
          key={recipe.recipe.label}
@@ -56,6 +58,7 @@ const App = () => {
          ingredients={recipe.recipe.ingredients}
          />
       ))}
+      </container>
     </div>
   );
 };
