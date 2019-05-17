@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Recipe from './Recipe';
+
 import './App.css';
 
 const App = () => {
@@ -51,8 +52,8 @@ const App = () => {
         <Recipe 
          key={recipe.recipe.label}
          title={recipe.recipe.label}
-         calories={recipe.recipe.calories}
          image={recipe.recipe.image}
+         ingredients={recipe.recipe.ingredients}
          />
       ))}
     </div>

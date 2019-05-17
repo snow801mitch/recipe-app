@@ -1,4 +1,9 @@
 .App {
   text-align: center;
+  background-color: orange;
+  min-height: 9000px;
+}
 
+.ingredient-list {
+ list-style-type: none;
 }
