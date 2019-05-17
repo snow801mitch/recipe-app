@@ -2,11 +2,11 @@ import React from 'react';
 
 const Recipe = ({title, calories, image}) => {
     return(
-        <section>
+        <div>
             <h1>{title}</h1>
-            <p>{calories}</p>
+            <p>calories {calories}</p>
             <img src={image} alt=""/>
-        </section>
+        </div>
     );
 };
 
