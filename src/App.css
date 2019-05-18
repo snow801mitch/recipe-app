@@ -5,6 +5,8 @@ background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%,
 
 .recipe-title{
   text-align: center;
+  font-size: 44px;
+  color: white;
 }
 
 .search-form{
@@ -32,4 +34,10 @@ background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%,
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.image {
+ border-radius: 55%;
+ width: 150px;
+ height: 150px;
 }
